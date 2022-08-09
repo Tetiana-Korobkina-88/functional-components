@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Clicker from "./Clicker";
+import WithRef from "./Ref"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <h2>React App</h2>
       <button onClick={() => setClicker(!isClicker)}>Toggle clicker</button>
       {isClicker && <Clicker />}
+      <WithRef />
     </div> 
   );
 } 
